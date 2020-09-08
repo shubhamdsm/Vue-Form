@@ -1,3 +1,3 @@
 # Vue-Form
 
-Link: https://vue-form-uppercase.netlify.app/
+Link: https://vue-form-uppercase.netlify.com/
