@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <div id="app">	
+        <h1>Vue App </h1>
+        <input v-model="message" placeholder="Write Here">
+        <p>String in uppercase: {{ message2 }}</p>
+        
+        <button @click = 'myFunc()'>Click to Convert</button>
+    </div>
+    <script>
+     new Vue({
+    el: '#app',
+      
+      data: { 
+          
+          message:'',
+          message2:''
+      },
+      
+       methods:{
+        
+        myFunc: function(){
+            this.message2 = this.message.toUpperCase();
+        }
+       }
+    
+    });
+    </script> 
+    
+</body>
+</html>
